@@ -10,11 +10,12 @@ The URL Shortener App is a simple web application that allows users to create sh
 ---
 
 
-## Screenshots
+## Home Page Screenshots
 ![Homepage Page Screenshot](public/images/home_page.png)
-![URL Page Screenshot](public/images/url.png)
-![Result Page Screenshot](public/images/shortened_result.png)
 
+
+## URL Page Screenshots
+![URL Page Screenshot](public/images/url.png)
 
 
 ## API Documentation
@@ -46,6 +47,11 @@ The URL Shortener App is a simple web application that allows users to create sh
         "shortUrl": "google images"
     }'
     ```
+
+
+## Result Page Screenshots
+![Result Page Screenshot](public/images/shortened_result.png)
+
 
 ### 2. Redirect to Original URL
 - **Endpoint:** `GET http://localhost:4000/google_images`
