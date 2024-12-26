@@ -26,8 +26,8 @@ The URL Shortener App is a simple web application that allows users to create sh
 - **Request Body:**
     ```json
     {
-        "originalUrl": "https://www.google.com/search?q=images&rlz=1C1CHBF_enIN1049IN1049&oq=images&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAtIBBzY5NGowajeoAgiwAgE&sourceid=chrome&ie=UTF-8",
-        "shortUrl": "google images"
+        "originalUrl": "https://www.google.com/search?q=kia+carnival&rlz=1C1CHBF_enIN1049IN1049&oq=&gs_lcrp=EgZjaHJvbWUqCQgBECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQkzMjQ2MWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8",
+        "shortUrl": "kia_cars"
     }
     ```
 - **Expected Response:**
@@ -35,7 +35,7 @@ The URL Shortener App is a simple web application that allows users to create sh
     {
         "success": true,
         "message": "Shortened URL created successfully",
-        "shortenedUrl": "http://localhost:4000/google_images"
+        "shortenedUrl": "http://localhost:4000/kia_cars"
     }
     ```
 - **CURL Example:**
@@ -43,8 +43,8 @@ The URL Shortener App is a simple web application that allows users to create sh
     curl --location 'http://localhost:4000/shortener' \
     --header 'Content-Type: application/json' \
     --data '{
-        "originalUrl": "https://www.google.com/search?q=images&rlz=1C1CHBF_enIN1049IN1049&oq=images&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAtIBBzY5NGowajeoAgiwAgE&sourceid=chrome&ie=UTF-8",
-        "shortUrl": "google images"
+        "originalUrl": "https://www.google.com/search?q=kia+carnival&rlz=1C1CHBF_enIN1049IN1049&oq=&gs_lcrp=EgZjaHJvbWUqCQgBECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQkzMjQ2MWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8",
+        "shortUrl": "kia_cars"
     }'
     ```
 
@@ -54,17 +54,10 @@ The URL Shortener App is a simple web application that allows users to create sh
 
 
 ### 2. Redirect to Original URL
-- **Endpoint:** `GET http://localhost:4000/google_images`
+- **Endpoint:** `GET http://localhost:4000/kia_cars`
 - **Description:** This API redirects the user to the original URL associated with the shortened URL.
 - **CURL Example:**
     ```bash
-    curl --location 'http://localhost:4000/google_images' \
+    curl --location 'http://localhost:4000/kia_cars' \
     --data ''
     ```
-
-## Getting Started
-To run the URL Shortener application locally, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername
