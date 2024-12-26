@@ -9,7 +9,7 @@ const urlSchema = new mongoose.Schema({
     shortUrl: {
         type: String,
         required: [true, "Short URL is required"],
-        unique: [true, "Unique URL is required"]
+        unique: [true, "Unique Short URL is required"]
     },
     clicks: {
         type: Number,
@@ -17,4 +17,4 @@ const urlSchema = new mongoose.Schema({
     }
 }, { timestamps: true })
 
-export const UrlModel = mongoose.model('UrlModel', urlSchema)
+export const UrlModel = mongoose.model('Url', urlSchema)
