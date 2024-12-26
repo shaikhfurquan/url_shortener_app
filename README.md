@@ -3,6 +3,33 @@
 ## Overview
 The URL Shortener App is a simple web application that allows users to create shortened URLs for long web addresses. This project provides an API for creating shortened URLs and redirecting users to the original URLs.
 
+
+
+## Features  
+- Shorten long URLs with ease.  
+- Option to specify a custom shortened URL.  
+- Clean and user-friendly interface.  
+- Responsive design for better usability across devices.  
+
+---
+
+## Usage  
+1. Enter the **Original URL** in the input field.  
+2. Provide a custom **Shortened URL**.  
+3. Click the "Shortener" button to generate the shortened link.  
+4. Use the displayed shortened link to redirect to the original URL.  
+
+---
+
+## Tech Stack  
+- **Frontend**: HTML, CSS, JavaScript  
+- **Backend**: Node.js, Express  
+- **Database**: MongoDB (if applicable for URL storage)  
+
+---
+
+
+
 ## Available APIs
 - [1. Create Shortened URL](#1-create-shortened-url)
 - [2. Redirect to Original URL](#2-redirect-to-original-url)
@@ -10,12 +37,17 @@ The URL Shortener App is a simple web application that allows users to create sh
 ---
 
 
-## Home Page Screenshots
-![Homepage Page Screenshot](public/images/home_page.png)
+### 1. Home Page  
+![Home Page Screenshot](public/images/home_page.png)  
+The Home Page provides an intuitive interface for users to enter the **Original URL** and optionally specify a **Shortened URL**.  
 
 
-## URL Page Screenshots
-![URL Page Screenshot](public/images/url.png)
+
+
+### 2. URL Entry Page  
+![URL Page Screenshot](public/images/url.png)  
+This page allows users to input their **Original URL** and an optional **Shortened URL**. By clicking the "Shortener" button, users can generate the shortened link.  
+
 
 
 ## API Documentation
@@ -49,8 +81,10 @@ The URL Shortener App is a simple web application that allows users to create sh
     ```
 
 
-## Result Page Screenshots
-![Result Page Screenshot](public/images/shortened_result.png)
+### 3. Result Page  
+![Result Page Screenshot](public/images/shortened_result.png)  
+After clicking the "Shortener" button, the **Shortened URL** is displayed. The link is clickable and will redirect users to the original URL.  
+
 
 
 ### 2. Redirect to Original URL
